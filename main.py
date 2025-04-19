@@ -7,8 +7,8 @@ from pydantic import BaseModel
 from typing import List
 import openai
 
-# Initialize OpenAI client
-client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Setup OpenAI API Key
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Load assessment data and embeddings
 with open("assessments.json", "r", encoding="utf-8") as f:
@@ -36,11 +36,11 @@ class QueryRequest(BaseModel):
 async def recommend(request: QueryRequest):
     try:
         # Embed the query using OpenAI
-        response = client.embeddings.create(
+        response = openai.Embedding.create(
             input=[request.query],
             model="text-embedding-ada-002"
         )
-        query_embedding = np.array(response.data[0].embedding)
+        query_embedding = np.array(response["data"][0]["embedding"])
 
         # Compute cosine similarity
         norms = np.linalg.norm(embeddings, axis=1) * np.linalg.norm(query_embedding)
@@ -52,4 +52,5 @@ async def recommend(request: QueryRequest):
         return {"recommendations": recommendations}
 
     except Exception as e:
+        print("Error occurred:", str(e))
         raise HTTPException(status_code=500, detail=str(e))
