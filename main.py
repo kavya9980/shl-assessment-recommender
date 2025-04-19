@@ -1,14 +1,25 @@
-from fastapi import FastAPI, Request
-from fastapi.middleware.cors import CORSMiddleware
+import os
 import json
 import numpy as np
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
+from typing import List
 import openai
-from sklearn.metrics.pairwise import cosine_similarity
-import os
 
+# Initialize OpenAI client
+client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+# Load assessment data and embeddings
+with open("assessments.json", "r", encoding="utf-8") as f:
+    assessments = json.load(f)
+
+embeddings = np.load("embeddings.npy")
+
+# Setup FastAPI app
 app = FastAPI()
 
-# Allow CORS for all origins (for frontend access)
+# CORS (allow all for demo)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -17,52 +28,28 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Load environment variable for API key
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
-# Load data and embeddings
-with open("assessments.json", "r") as f:
-    data = json.load(f)
-
-embedding_matrix = np.load("embeddings.npy")
-
-texts = [item.get("name", "") + " - " + item.get("description", "") for item in data]
-
-@app.get("/")
-def root():
-    return {"message": "SHL Assessment Recommendation API is running."}
+class QueryRequest(BaseModel):
+    query: str
+    top_k: int = 10
 
 @app.post("/recommend")
-async def recommend(request: Request):
-    payload = await request.json()
-    query = payload.get("query", "")
+async def recommend(request: QueryRequest):
+    try:
+        # Embed the query using OpenAI
+        response = client.embeddings.create(
+            input=[request.query],
+            model="text-embedding-ada-002"
+        )
+        query_embedding = np.array(response.data[0].embedding)
 
-    if not query:
-        return {"error": "Query cannot be empty."}
+        # Compute cosine similarity
+        norms = np.linalg.norm(embeddings, axis=1) * np.linalg.norm(query_embedding)
+        similarities = np.dot(embeddings, query_embedding) / norms
+        top_indices = np.argsort(similarities)[::-1][:request.top_k]
 
-    # Generate embedding for query
-    response = openai.Embedding.create(
-        input=query,
-        model="text-embedding-ada-002"
-    )
-    query_embedding = np.array(response['data'][0]['embedding']).reshape(1, -1)
+        # Return top K results
+        recommendations = [assessments[i] for i in top_indices]
+        return {"recommendations": recommendations}
 
-    # Compute cosine similarities
-    similarities = cosine_similarity(query_embedding, embedding_matrix)[0]
-
-    # Get top 10 indices
-    top_indices = similarities.argsort()[::-1][:10]
-
-    recommendations = []
-    for idx in top_indices:
-        item = data[idx]
-        recommendations.append({
-            "name": item.get("name", item.get("Assessment Name", "")),
-            "description": item.get("description", item.get("Description", "")),
-            "job_levels": item.get("job_levels", item.get("Job Levels", [])),
-            "duration_minutes": item.get("duration_minutes", item.get("Assessment Length (Minutes)", "")),
-            "remote_testing": item.get("remote_testing", item.get("Remote Testing Support", "")),
-            "test_type": item.get("test_type", item.get("Test Type", "")),
-        })
-
-    return {"results": recommendations}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
