@@ -1,0 +1,413 @@
+[
+  {
+    "name": "Agile Testing (New)",
+    "description": "Multi-choice test that measures the knowledge of tools, techniques and processes involved in the Agile testing methodology.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 13,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)"
+    ]
+  },
+  {
+    "name": "Agile Software Development",
+    "description": "Multi-choice test that measures the knowledge of agile methodology, scrum, feature driven software development, incremental and iterative development and processes involved in agile software development.",
+    "job_levels": ["Graduate"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 7,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Sample Report (English USA)",
+      "Fact Sheet (English USA)"
+    ]
+  },
+  {
+    "name": "Aerospace Engineering (New)",
+    "description": "Multi-choice test that measures the conceptual knowledge of aerodynamics, aircraft systems and instrumentation, flight dynamics, space dynamics and avionics.",
+    "job_levels": ["Graduate", "Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 10,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)",
+      "Sample Report (English USA)"
+    ]
+  },
+  {
+    "name": "Aeronautical Engineering (New)",
+    "description": "Multi-choice test that measures the knowledge of flight mechanics, space dynamics, aerodynamics, structures and propulsion.",
+    "job_levels": ["Graduate", "Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 10,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)",
+      "Sample Report (English USA)"
+    ]
+  },
+  {
+    "name": "Adobe Photoshop CC",
+    "description": "The Adobe Photoshop CC test measures knowledge of Adobe Photoshop CC. Designed for experienced users, this test covers the following topics: 3D, Color, File Management, Interface, Layers, Painting and Drawing, Retouch and Enhancements, Selection, Text, and Web.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 20,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)"
+    ]
+  },
+  {
+    "name": "Adobe Experience Manager (New)",
+    "description": "Multi-choice test that measures the knowledge of AEM components, templates, workflows, AEM collections, OSGi services and troubleshooting of AEM projects.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 17,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)"
+    ]
+  },
+
+
+  {
+    "name": "Apache Hadoop (New)",
+    "description": "Multi-choice test that measures the knowledge of basic concepts of Hadoop, commands, HDFS and MapReduce.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 7,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)"
+    ]
+  },
+  {
+    "name": "AngularJS (New)",
+    "description": "Multi-choice test that measures the knowledge of AngularJS architecture, forms, directives, filters, controllers, routing and testing.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 9,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)"
+    ]
+  },
+  {
+    "name": "Angular 6 (New)",
+    "description": "Multi-choice test that measures the knowledge of the basic components and modules of Angular 6 and concepts like data binding, dependency injection, CRUD with HTTP, typescript, routing and navigation.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 11,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)"
+    ]
+  },
+  {
+    "name": "Android Development (New)",
+    "description": "Multi-choice test that measures the knowledge of UI components for an Android device, services and alerts, animation and media apps, application components, security and testing.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 7,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)"
+    ]
+  },
+  {
+    "name": "Amazon Web Services (AWS) Development (New)",
+    "description": "Multi-choice test that measures the knowledge of AWS delivery process, monitoring, metrics, logging, security, validation and scalability.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": null,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)"
+    ]
+  },
+  {
+    "name": "AI Skill",
+    "description": "The AI Skills assessment measures the skills that help candidates successfully leverage AI in their work.",
+    "job_levels": ["General Population"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 1,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Sample Report (English USA)"
+    ]
+  },
+  {
+    "name": "Apache Spark (New)",
+    "description": "Multi-choice test that measures the knowledge of Apache Spark principles, RDD operations - actions and transformations, lineage graphs and lazy evaluation.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 8,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)"
+    ]
+  },
+  {
+    "name": "Apache Pig (New)",
+    "description": "Multi-choice test that measures the knowledge of Pig architecture, built-in operators, built-in functions and commands in PigLatin.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": null,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)"
+    ]
+  },
+  {
+    "name": "Apache Kafka (New)",
+    "description": "Multi-choice test that measures the knowledge of Apache Kafka architecture, components, clusters, performance tuning and advanced operations.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 6,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)"
+    ]
+  },
+  {
+    "name": "Apache Hive (New)",
+    "description": "Multi-choice test that measures the knowledge of Hive architecture, datatypes, built-in functions, configurations, partitioning, bucketing and commands of Hive query language.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": null,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)"
+    ]
+  },
+  {
+    "name": "Apache HBase (New)",
+    "description": "Multi-choice test that measures the knowledge of HBase concepts such as CAP theorem, ACID properties, HBase client API, MapReduce integration, configuration and administration.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 5,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)"
+    ]
+  },
+  {
+    "name": "Apache Hadoop Extensions (New)",
+    "description": "Multi-choice test that measures the conceptual knowledge of Pig, Hive and HBase.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": null,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)"
+    ]
+  },
+  {
+    "name": "Automata Data Science (New)",
+    "description": "A simulated test that measures the ability to analyze and modify data using machine learning algorithms to obtain desirable results.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 60,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)",
+      "Sample Report (English USA)"
+    ]
+  },
+  {
+    "name": "Automata (New)",
+    "description": "An AI-powered coding simulation assessment that evaluates candidate’s programming ability. Offers a familiar IDE environment available in over 40 different programming languages and tests candidates using real-world coding problems.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 4,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)",
+      "Sample Report (English USA)"
+    ]
+  },
+  {
+    "name": "Automata - SQL (New)",
+    "description": "A simulated query writing test that measures the ability to write SQL queries to perform DDL, DML and DCL tasks.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 30,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Product Fact Sheet (English USA)",
+      "Sample Report (English USA)"
+    ]
+  },
+  {
+    "name": "Assessment and Development Center Exercises",
+    "description": "SHL offers a comprehensive range of Assessment and Development Centre exercise in digital format, for remote assessment through our Virtual Assessment and Development Centre platform. We offer a wide range of exercise types including group exercise, role plays, analysis presentations and written exercises. Exercises are available across a wide range of job levels and industry contexts. Contact SHL to find out more.",
+    "job_levels": [
+      "Director", "Entry-Level", "Executive", "Front Line Manager", "General Population",
+      "Graduate", "Manager", "Mid-Professional", "Professional Individual Contributor", "Supervisor"
+    ],
+    "languages": ["English International", "English (USA)"],
+    "duration_minutes": null,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": []
+  },
+  {
+    "name": "ASP.NET 4.5",
+    "description": "The ASP.NET 4.5 test measures knowledge of programming in the ASP.NET environment. Designed for experienced developers, but an average performer in this role should pass this test. This test includes the following topics: .NET Framework, Client-Side Programming, Data Access, Enhanced Runtime Features, Portals, Services and Mobile, Security, Troubleshooting and Optimization, Web Applications, and Web Forms.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 30,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": ["Product Fact Sheet (English USA)"]
+  },
+  {
+    "name": "ASP .NET with C# (New)",
+    "description": "Multi-choice test that measures the knowledge of .NET framework and controls, C# fundamentals, OOPs concepts and advanced topics such as data access components, state management and security services.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 13,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": ["Product Fact Sheet (English USA)"]
+  },
+  {
+    "name": ".NET WPF (New)",
+    "description": "Multi-choice test that measures the knowledge of .NET basics, WPF, XAML controls, events, layouts, working with WPF windows/menus and deploying WPF applications.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 9,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": ["Product Fact Sheet (English USA)"]
+  },
+  {
+    "name": ".NET WCF (New)",
+    "description": "Multi-choice test that measures the knowledge of .NET fundamentals, WCF architecture, programming model, SOA, managing and programming WCF.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 11,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": ["Product Fact Sheet (English USA)"]
+  },
+  {
+    "name": ".NET MVVM (New)",
+    "description": "Multi-choice test that measures the knowledge of MVVM pattern, scenarios, data validation, ViewModel communication and Quick-start.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 5,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": ["Product Fact Sheet (English USA)"]
+  },
+  {
+    "name": ".NET MVC (New)",
+    "description": "Multi-choice test that measures the knowledge of Model-View-Controller (MVC) architecture, validation, security, routing, and areas.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 17,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": ["Product Fact Sheet (English USA)"]
+  },
+  {
+    "name": ".NET Framework 4.5",
+    "description": "The .NET Framework 4.5 test measures knowledge of .NET environment. Designed for experienced users, this test covers the following topics: Application Development, Application Foundation, Data Modeling, Deployment, Diagnostics, Performance, Portability, and Security.",
+    "job_levels": ["Professional Individual Contributor", "Mid-Professional"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 30,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": ["Product Fact Sheet (English USA)"]
+  },
+  {
+    "name": "Global Skills Development Report",
+    "description": "This report is designed to be given to individuals who have completed the Global Skills Assessment (GSA). With coverage across the Great 8 Domains, this measure of self-reported behaviors offers a complete overview of their current skills. Participants receive actionable tips on leveraging their top skill strengths and how they might develop their growth skills.",
+    "job_levels": ["Director", "Entry-Level", "Executive", "General Population", "Graduate", "Manager", "Mid-Professional", "Front Line Manager", "Supervisor"],
+    "languages": ["English (International)", "English (USA)"],
+    "duration_minutes": null,
+    "test_type": null,
+    "remote_testing": null,
+    "downloads": [
+      "Sample Report (Development)",
+      "Global Skills Development Report (Reskilling) International English",
+      "Global Skills Development Report (Reskilling) US English"
+    ]
+  },
+  {
+    "Assessment Name": "ADO.NET (New)",
+    "Description": "Multi-choice test that measures the knowledge on the concepts of ADO.NET architecture, components and data provider objects.",
+    "Job Levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 10,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Accounts Receivable Simulation (New)",
+    "Description": "Simulated data entry test that measures the ability to process receivables and invoices.",
+    "Job Levels": ["Entry-Level", "Graduate", "Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 8,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Accounts Receivable (New)",
+    "Description": "Multiple-choice test that measures the knowledge of processing receivables and invoices.",
+    "Job Levels": ["Entry-Level", "Graduate", "Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 13,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Accounts Payable Simulation (New)",
+    "Description": "Simulated data entry test that measures the ability to process payables and vendor invoices.",
+    "Job Levels": ["Entry-Level", "Graduate", "Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 8,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Accounts Payable (New)",
+    "Description": "Multiple-choice test that measures the knowledge of processing payables and vendor invoices, and the posting of journal entries.",
+    "Job Levels": ["Entry-Level", "Graduate", "Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 9,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": ".NET XAML (New)",
+    "Description": "Multi-choice test that measures the knowledge of XAML triggers, data binding, custom controls and layouts.",
+    "Job Levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 5,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  }
+]
