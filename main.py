@@ -1,30 +1,26 @@
-import os
-import json
-import numpy as np
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List
-import openai
+import json
+import numpy as np
+import os
+from sentence_transformers import SentenceTransformer, util
 
-# Setup OpenAI API Key
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
-# Load assessment data and embeddings
-with open("assessments.json", "r", encoding="utf-8") as f:
+# Load assessment data
+with open("assessments.json", "r") as f:
     assessments = json.load(f)
 
-embeddings = np.load("embeddings.npy")
+# Load sentence transformer model
+model = SentenceTransformer("all-MiniLM-L6-v2")
 
-# Setup FastAPI app
+# Precompute embeddings
+corpus = [a["description"] for a in assessments]
+corpus_embeddings = model.encode(corpus, convert_to_tensor=True)
+
 app = FastAPI()
 
-# Add root endpoint for Render health check
-@app.get("/")
-def read_root():
-    return {"message": "SHL Assessment Recommender API is running"}
-
-# CORS setup (allow all for demo)
+# Allow frontend to access backend
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -33,31 +29,27 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Request model
 class QueryRequest(BaseModel):
     query: str
-    top_k: int = 10
+    top_k: int = 5
 
-# Recommendation endpoint
 @app.post("/recommend")
 async def recommend(request: QueryRequest):
-    try:
-        # Embed the query using OpenAI
-        response = openai.Embedding.create(
-            input=[request.query],
-            model="text-embedding-ada-002"
-        )
-        query_embedding = np.array(response["data"][0]["embedding"])
+    query_embedding = model.encode(request.query, convert_to_tensor=True)
+    hits = util.semantic_search(query_embedding, corpus_embeddings, top_k=request.top_k)
+    hits = hits[0]
 
-        # Compute cosine similarity
-        norms = np.linalg.norm(embeddings, axis=1) * np.linalg.norm(query_embedding)
-        similarities = np.dot(embeddings, query_embedding) / norms
-        top_indices = np.argsort(similarities)[::-1][:request.top_k]
+    results = []
+    for hit in hits:
+        item = assessments[hit['corpus_id']]
+        results.append({
+            "name": item["name"],
+            "url": item["url"],
+            "description": item["description"],
+            "duration": item.get("duration"),
+            "adaptive": item.get("adaptive"),
+            "remote": item.get("remote"),
+            "test_type": item.get("test_type")
+        })
 
-        # Return top K results
-        recommendations = [assessments[i] for i in top_indices]
-        return {"recommendations": recommendations}
-
-    except Exception as e:
-        print("Error occurred:", str(e))
-        raise HTTPException(status_code=500, detail=str(e))
+    return {"results": results}
