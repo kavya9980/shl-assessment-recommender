@@ -19,7 +19,12 @@ embeddings = np.load("embeddings.npy")
 # Setup FastAPI app
 app = FastAPI()
 
-# CORS (allow all for demo)
+# Add root endpoint for Render health check
+@app.get("/")
+def read_root():
+    return {"message": "SHL Assessment Recommender API is running"}
+
+# CORS setup (allow all for demo)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -28,10 +33,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Request model
 class QueryRequest(BaseModel):
     query: str
     top_k: int = 10
 
+# Recommendation endpoint
 @app.post("/recommend")
 async def recommend(request: QueryRequest):
     try:
