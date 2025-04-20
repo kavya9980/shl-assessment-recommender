@@ -409,5 +409,355 @@
     "Assessment Length (Minutes)": 5,
     "Test Type": "",
     "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Accounts Payable (New)",
+    "Description": "Multiple-choice test that measures the knowledge of processing payables and vendor invoices, and the posting of journal entries.",
+    "Job Levels": ["Entry-Level", "Graduate", "Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 9,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": ".NET XAML (New)",
+    "Description": "Multi-choice test that measures the knowledge of XAML triggers, data binding, custom controls and layouts.",
+    "Job Levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 5,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "C++ Programming (New)",
+    "Description": "Multi-choice test that measures the knowledge of programming in the C++ language and the ability to use the C++ standard library to write code.",
+    "Job Levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 10,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "C# Programming (New)",
+    "Description": "Multi-choice test that measures the knowledge of C# programming structure, functions, collections, enumeration, exception handling, OOPs constructs, inheritance, event handling and operator overloading.",
+    "Job Levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 9,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "C Programming (New)",
+    "Description": "Multi-choice test that measures the knowledge of C programming basics, functions, arrays, composed data types, and advanced C concepts like SLF, file handling and dynamic memory.",
+    "Job Levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 10,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Business Communication (adaptive)",
+    "Description": "This is an adaptive test that measures knowledge of communicating in the workplace. It measures the skills necessary to communicate effectively with coworkers at all levels and with external business contacts. Designed for the average business worker, this test includes the following topics: Electronic Communication, Employment Communication, Listening, Meetings, Nonverbal Communication, Verbal Communication, and Written Communication.",
+    "Job Levels": ["Entry-Level", "Front Line Manager", "Manager", "Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 24,
+    "Test Type": "Adaptive",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "BizTalk (New)",
+    "Description": "Multi-choice test that measures the knowledge of BizTalk architecture, pipelines, adapters, business process techniques and BizTalk administration.",
+    "Job Levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 16,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Human Resources (New)",
+    "Description": "Multi-choice test that measures the candidate on his/her knowledge and understanding of the basic concepts of Human Resources Management like planning, training and development, performance appraisal, compensation management, etc. It also evaluates the candidate’s understanding of organizational behavior in different organizational structures.",
+    "Job Levels": ["Graduate", "Manager", "Mid-Professional", "Professional Individual Contributor", "Supervisor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 8,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "HTML/CSS (New)",
+    "Description": "Multi-choice test that measures the knowledge of HTML to create a user interface and CSS to stylize it.",
+    "Job Levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 12,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Dermatology (New)",
+    "Description": "Multi-choice test that measures the knowledge of various diseases related to skin, their symptoms, the drugs used to treat them, and different terminologies used in the field of dermatology.",
+    "Job Levels": ["Graduate", "Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 3,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Digital Advertising (New)",
+    "Description": "Multi-choice test that measures the candidate's knowledge about use of AdWords and tools to analyze ad performance on digital media.",
+    "Job Levels": ["Graduate", "Manager", "Mid-Professional", "Professional Individual Contributor", "Supervisor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 7,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Data Science (New)",
+    "Description": "Multi-choice test that measures the conceptual knowledge on how to use machine learning to analyze data, extract information, draw conclusions and make statistically-driven decisions.",
+    "Job Levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 14,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Data Entry (New)",
+    "Description": "Simulated data entry test that measures the ability to accurately transcribe data from pre-filled forms and the ability to verify pre-filled data.",
+    "Job Levels": ["Entry-Level"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 4,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Marketing (New)",
+    "Description": "Multi-choice test that measures the conceptual knowledge of marketing principles, market research, consumer behavior, brand management, sales management, channel management and advertisement management.",
+    "Job Levels": ["Graduate", "Manager", "Mid-Professional", "Professional Individual Contributor", "Supervisor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 9,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Manual Testing (New)",
+    "Description": "Multi-choice test that measures the knowledge of the software testing life cycle, testing tools and techniques, design of test cases and generation of test reports.",
+    "Job Levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 10,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Mechatronics Engineering (New)",
+    "Description": "Multi-choice test that measures the knowledge related to basic mechatronics systems, components, sensors, feedback devices, control elements, actuators, computational elements and application of mechatronic systems.",
+    "Job Levels": ["Graduate", "Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 19,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Linux Administration (New)",
+    "Description": "Multi-choice test that measures knowledge of the Linux operating system and its application in system administration and network administration.",
+    "Job Levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 10,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Kubernetes (New)",
+    "Description": "Multi-choice test that measures the knowledge of the architecture, cluster and services of Kubernetes.",
+    "Job Levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 6,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "iOS Development (New)",
+    "Description": "Multi-choice test that measures the knowledge of Objective C, NSObject, iOS fundamentals and UI design on iOS phones.",
+    "Job Levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 7,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "ITIL (IT Infrastructure Library) (New)",
+    "Description": "Multi-choice test that measures the knowledge of capacity management, change management and problem management.",
+    "Job Levels": ["Manager", "Mid-Professional", "Professional Individual Contributor", "Supervisor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 8,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "Assessment Name": "Java 8 (New)",
+    "Description": "Multi-choice test that measures the knowledge of Java class design, exceptions, generics, collections, concurrency, JDBC and Java I/O fundamentals.",
+    "Job Levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "Languages": ["English (USA)"],
+    "Assessment Length (Minutes)": 18,
+    "Test Type": "",
+    "Remote Testing Support": ""
+  },
+  {
+    "name": "Marketing (New)",
+    "description": "Multi-choice test that measures the conceptual knowledge of marketing principles, market research, consumer behavior, brand management, sales management, channel management and advertisement management.",
+    "job_levels": ["Graduate", "Manager", "Mid-Professional", "Professional Individual Contributor", "Supervisor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 9,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": ["Product Fact Sheet"]
+  },
+  {
+    "name": "Manual Testing (New)",
+    "description": "Multi-choice test that measures the knowledge of the software testing life cycle, testing tools and techniques, design of test cases and generation of test reports.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 10,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": ["Product Fact Sheet"]
+  },
+  {
+    "name": "Mechatronics Engineering (New)",
+    "description": "Multi-choice test that measures the knowledge related to basic mechatronics systems, components, sensors, feedback devices, control elements, actuators, computational elements and application of mechatronic systems.",
+    "job_levels": ["Graduate", "Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 19,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": ["Product Fact Sheet", "Sample Report"]
+  },
+  {
+    "name": "Linux Administration (New)",
+    "description": "Multi-choice test that measures knowledge of the Linux operating system and its application in system administration and network administration.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 10,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": ["Product Fact Sheet"]
+  },
+  {
+    "name": "Kubernetes (New)",
+    "description": "Multi-choice test that measures the knowledge of the architecture, cluster and services of Kubernetes.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 6,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": ["Product Fact Sheet"]
+  },
+  {
+    "name": "iOS Development (New)",
+    "description": "Multi-choice test that measures the knowledge of Objective C, NSObject, iOS fundamentals and UI design on iOS phones.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 7,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": ["Product Fact Sheet"]
+  },
+  {
+    "name": "ITIL (IT Infrastructure Library) (New)",
+    "description": "Multi-choice test that measures the knowledge of capacity management, change management and problem management.",
+    "job_levels": ["Manager", "Mid-Professional", "Professional Individual Contributor", "Supervisor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 8,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": ["Product Fact Sheet"]
+  },
+  {
+    "name": "Java 8 (New)",
+    "description": "Multi-choice test that measures the knowledge of Java class design, exceptions, generics, collections, concurrency, JDBC and Java I/O fundamentals.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 18,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": ["Product Fact Sheet"]
+  },
+  {
+    "name": "WriteX - Email Writing (Sales) (New)",
+    "description": "Open response test that evaluates the ability to write proper emails in English. The test provides scores on content, grammar and email etiquette.",
+    "job_levels": ["Entry-Level", "Graduate", "Manager", "Mid-Professional", "Professional Individual Contributor", "Supervisor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 15,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": ["Product Flyer (English USA)", "Product Fact Sheet (English USA)", "Sample Report (English USA)"]
+  },
+  {
+    "name": "Production Engineering (New)",
+    "description": "Multi-choice test that measures the knowledge of production technology and analysis, metal cutting, tool design, material science and CIM.",
+    "job_levels": ["Graduate", "Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 10,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": ["Product Fact Sheet (English USA)", "Sample Report (English USA)"]
+  },
+  {
+    "name": "Oracle PL/SQL (New)",
+    "description": "Multi-choice test that measures the knowledge of SQL queries, relational database concepts and specific Oracle PL/SQL features.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 11,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": ["Product Fact Sheet (English USA)"]
+  },
+  {
+    "name": "OPQ Manager Plus Report 2.0",
+    "description": "This concise OPQ (Occupational Personality Questionnaire) report is designed for use with and by managers. It uses clear succinct bullets and tables for ease of interpretation. It provides simple comments on each of the personality traits.",
+    "job_levels": ["Supervisor", "Executive", "Front Line Manager", "General Population", "Graduate", "Manager", "Mid-Professional", "Professional Individual Contributor", "Director", "Entry-Level"],
+    "languages": [],
+    "duration_minutes": null,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": [
+      "Sample Report (English International)",
+      "Sample Report (Latin American Spanish)",
+      "Sample Report (English USA)",
+      "Sample Report (Chinese Simplified)",
+      "Sample Report (Japanese)",
+      "Sample Report (Finnish)",
+      "Sample Report (French)",
+      "Sample Report (Swedish)",
+      "Sample Report (Portuguese Brazil)"
+    ]
+  },
+  {
+    "name": "MS Excel (New)",
+    "description": "Multi-choice test that measures the ability to use MS Excel to maintain, organize, analyze and present numeric data.",
+    "job_levels": ["Entry-Level", "Graduate", "Manager", "Mid-Professional", "Professional Individual Contributor", "Supervisor"],
+    "languages": ["English (USA)", "Spanish", "French", "Portuguese (Brazil)"],
+    "duration_minutes": 6,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": ["Product Fact Sheet (English USA)"]
+  },
+  {
+    "name": "MongoDB (New)",
+    "description": "Multi-choice test that measures the conceptual knowledge of MongoDB like sharding, replication, indexing, security and storage. It also checks the knowledge of MongoDB queries and data models.",
+    "job_levels": ["Mid-Professional", "Professional Individual Contributor"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 7,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": ["Product Fact Sheet (English USA)"]
+  },
+  {
+    "name": "Microsoft Word 365 (New)",
+    "description": "The Microsoft Word 365 simulation evaluates ability to perform certain operations in a simulated environment of Microsoft Word, and includes the following topics: Applying Illustrations and Graphics, Applying Page Layout, Creating Content, Creating, Printing, and Saving Documents, Formatting Content, Proofreading Documents and Reviewing, Maintaining, and Securing Documents.",
+    "job_levels": ["Entry-Level"],
+    "languages": ["English (USA)"],
+    "duration_minutes": 35,
+    "test_type": "",
+    "remote_testing": "",
+    "downloads": ["Fact Sheet (English USA)", "Sample Report (English USA)"]
   }
 ]
+
