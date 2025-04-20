@@ -1,11 +1,12 @@
 import json
-import os
-import uvicorn
 import numpy as np
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from typing import List
 from sentence_transformers import SentenceTransformer, util
+import uvicorn
+import os
 
 # Load model
 model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -14,7 +15,7 @@ model = SentenceTransformer("all-MiniLM-L6-v2")
 with open("assessments.json", "r", encoding="utf-8") as f:
     assessments = json.load(f)
 
-# Prepare corpus and track valid indices
+# Handle 'description' and 'Description' keys
 corpus = []
 valid_indices = []
 for i, a in enumerate(assessments):
@@ -23,11 +24,13 @@ for i, a in enumerate(assessments):
         corpus.append(desc)
         valid_indices.append(i)
 
-# Compute embeddings
+# Precompute embeddings
 corpus_embeddings = model.encode(corpus, convert_to_tensor=True)
 
-# FastAPI setup
+# FastAPI app
 app = FastAPI()
+
+# Enable CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -36,17 +39,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Input schema
 class QueryRequest(BaseModel):
     query: str
     top_k: int = 10
 
-# POST /recommend
 @app.post("/recommend")
 async def recommend(request: QueryRequest):
     try:
         query_embedding = model.encode(request.query, convert_to_tensor=True)
         hits = util.semantic_search(query_embedding, corpus_embeddings, top_k=request.top_k)[0]
+
         results = []
         for hit in hits:
             item = assessments[valid_indices[hit['corpus_id']]]
@@ -59,11 +61,11 @@ async def recommend(request: QueryRequest):
                 "test_type": item.get("test_type") or item.get("Test Type"),
                 "url": item.get("url", "#")
             })
+
         return {"results": results}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-# Run locally or on Render
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     uvicorn.run("main:app", host="0.0.0.0", port=port)
