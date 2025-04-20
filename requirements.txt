@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-pydantic
-sentence-transformers
-torch
+openai
 numpy
+scikit-learn
+python-dotenv
