@@ -1,12 +1,11 @@
 import json
+import os
+import uvicorn
 import numpy as np
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import List
 from sentence_transformers import SentenceTransformer, util
-import uvicorn
-import os
 
 # Load model
 model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -15,7 +14,7 @@ model = SentenceTransformer("all-MiniLM-L6-v2")
 with open("assessments.json", "r", encoding="utf-8") as f:
     assessments = json.load(f)
 
-# Handle keys like 'description' or 'Description'
+# Prepare corpus and track valid indices
 corpus = []
 valid_indices = []
 for i, a in enumerate(assessments):
@@ -24,13 +23,11 @@ for i, a in enumerate(assessments):
         corpus.append(desc)
         valid_indices.append(i)
 
-# Precompute embeddings
+# Compute embeddings
 corpus_embeddings = model.encode(corpus, convert_to_tensor=True)
 
-# FastAPI app
+# FastAPI setup
 app = FastAPI()
-
-# CORS setup
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -39,10 +36,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Input schema
 class QueryRequest(BaseModel):
     query: str
     top_k: int = 10
 
+# POST /recommend
 @app.post("/recommend")
 async def recommend(request: QueryRequest):
     try:
@@ -64,7 +63,7 @@ async def recommend(request: QueryRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+# Run locally or on Render
 if __name__ == "__main__":
-    # Use PORT from environment, fallback to 8000
-    port = int(os.environ.get("PORT", 8000))
+    port = int(os.environ.get("PORT", 10000))
     uvicorn.run("main:app", host="0.0.0.0", port=port)
