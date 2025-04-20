@@ -2,6 +2,7 @@ import json
 import numpy as np
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from typing import List
 from sentence_transformers import SentenceTransformer, util
@@ -42,6 +43,13 @@ app.add_middleware(
 class QueryRequest(BaseModel):
     query: str
     top_k: int = 10
+
+@app.get("/")
+def read_root():
+    return JSONResponse(content={
+        "message": "SHL Assessment Recommender API is live.",
+        "usage": "Send POST request to /recommend with 'query' and optional 'top_k'."
+    })
 
 @app.post("/recommend")
 async def recommend(request: QueryRequest):
