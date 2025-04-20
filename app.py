@@ -20,16 +20,16 @@ if st.button("Get Recommendations"):
                     json={"query": query}
                 )
                 if response.status_code == 200:
-                    results = response.json()["results"]
+                    results = response.json().get("results", [])
                     if not results:
                         st.info("No relevant assessments found.")
                     else:
                         for i, r in enumerate(results, 1):
-                            st.markdown(f"### {i}. [{r['name']}]({r['url']})")
-                            st.write(f"**Remote Support:** {r['remote']}")
-                            st.write(f"**IRT/Adaptive:** {r['adaptive']}")
-                            st.write(f"**Duration:** {r['duration']}")
-                            st.write(f"**Type:** {r['type']}")
+                            st.markdown(f"### {i}. [{r.get('name', 'Unnamed')}]({r.get('url', '#')})")
+                            st.write(f"**Remote Support:** {r.get('remote', 'Not specified')}")
+                            st.write(f"**IRT/Adaptive:** {r.get('adaptive', 'Not specified')}")
+                            st.write(f"**Duration:** {r.get('duration', 'Unknown')}")
+                            st.write(f"**Type:** {r.get('type', 'Not specified')}")
                             st.markdown("---")
                 else:
                     st.error(f"API error: {response.status_code}")
